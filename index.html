@@ -67,10 +67,20 @@
           <h1 class="title is-1 publication-title">Camera Settings as Tokens:<br>Modeling Photography on Latent Diffusion Models</h1>
           
           <div class="is-size-5 publication-authors">
-            <span class="author-block">
+            
               <!-- <a href="https://camera-settings-as-tokens.github.io">Anonymous Author</a><sup>1</sup>,</span> -->
-              Anonymous Authors</a></span>
+              <!--Anonymous Authors</a></span> -->
+              <span class="author-block">
+              <a href="https://ishengfang.github.io/">I-Sheng Fang</a>,</span>
+              <span class="author-block">
+              <a href="https://www.linkedin.com/in/yuehuahan/">Yue-Hua Han</a>,</span>
+              <span class="author-block">
+              <a href="https://homepage.citi.sinica.edu.tw/pages/pullpull/">Jun-Cheng Chen</a>,</span>
 
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Research Center of Information Technology Innovation, Academia Sinica</span>
+          </div>
+            
           </div>
 
 
@@ -207,6 +217,43 @@
 
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Method. -->
+    <div class="container has-text-centered is-max-desktop">
+      <h2 class="title is-3">Methods</h2>
+      <p>
+
+      </p>
+     </div>
+
+      <p>
+        To address these challenges, we present <b>CameraSettings20k</b> and introduce <b>Camera Settings as Tokens</b>. 
+      </p>
+      <p>
+        <b>CameraSettings20k</b> is a new dataset aggregated from RAISE, DDPD, and PPR10K datasets.
+        Our curated dataset offers normalized camera settings for over 20,000 raw-format images, 
+        providing equivalent values standardized to a full-frame sensor. 
+      </p>
+
+      <div class="column is-centered">
+          <div class="content has-text-centered">
+<!--             <img src="./static/images/method.png" width="87%"> -->
+
+          <p>
+            Our key idea is to embed camera settings as tokens in the text feature space of Latent Diffusion Models (LDMs) for more effective and precise image control.
+          </p>
+        </div>
+          <p>
+            We introduce  <b>Camera Settings as Tokens</b>, an embedding approach leveraging the LoRA adapter of Latent Diffusion Models (LDMs) 
+            to numerically control image generation based on photographic principles like focal length, aperture, film speed, and exposure time. 
+          </p>
+
+        </div>
+      </div>
+</section>
+
+  
 
 <section class="section">
   <div class="container is-max-desktop">
