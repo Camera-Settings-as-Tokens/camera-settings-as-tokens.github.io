@@ -119,14 +119,24 @@
                   <span>Video (Coming Soon)</span>
                 </a>
               </span>
-              <!-- Code Link. -->
+              <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://camera-settings-as-tokens.github.io"
+                <a href="https://github.com/aiiu-lab/CameraSettings20K"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code (Coming Soon)</span>
+                  <span>Dataset</span>
+                  </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/aiiu-lab/Camera-Settings-as-Tokens"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
                   </a>
               </span>
               <!-- Demo Link. -->
@@ -138,6 +148,17 @@
                   </span>
                   <span>Demo</span>
                   </a>
+              </span>
+              <!-- Model Link. -->
+              <span class="link-block">
+                <a href="https://github.com/IShengFang/Camera-Settings-as-Tokens-SD2"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa-regular fa-face-smiling-hands"></i>
+                  </span>
+                  <span>Model</span>
+                  </a>
+              </span>             
             </div>
 
           </div>
@@ -175,24 +196,22 @@
 
 
 
-<!-- <section class="section">
-  <div class="container is-max-desktop"> -->
+<section class="section">
+  <div class="container is-max-desktop"> 
     <!-- Abstract. -->
-    <!-- <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            placeholder for abstract
+            Text-to-image models have revolutionized content creation, enabling users to generate images from natural language prompts. While recent advancements in conditioning these models offer more control over the generated results, photography—a significant artistic domain—remains inadequately integrated into these systems. Our research identifies critical gaps in modeling camera settings and photographic terms within text-to-image synthesis. Vision-language models (VLMs) like CLIP and OpenCLIP, which typically drive the text conditions through cross-attention mechanisms of conditional diffusion models, struggle to represent numerical data like camera settings effectively in their textual space. To address these challenges, we present CameraSettings20k, a new dataset aggregated from RAISE, DDPD, and PPR10K.Our curated dataset offers normalized camera settings for over 20,000 raw-format images, providing equivalent values standardized to a full-frame sensor. Furthermore, we introduce Camera Settings as Tokens, an embedding approach leveraging the LoRA adapter of Latent Diffusion Models (LDMs) to numerically control image generation based on photographic principles like focal length, aperture, film speed, and exposure time. Our experimental results demonstrate the effectiveness of the proposed approach to generate promising synthesized images obeying the photographic principles given the specified numerical camera settings. Furthermore, our work not only bridges the gap between camera settings and user-friendly photographic control in image synthesis but also sets the stage for future explorations into more physics-aware generative models.
           </p>
         </div>
       </div>
-    </div> -->
+    </div>
     <!--/ Abstract. -->
-
-
-  <!-- </div>
-</section> -->
+  </div>
+</section> 
 
 <section class="section">
   <!-- Introduction. -->
@@ -245,14 +264,14 @@
         to numerically control image generation based on photographic principles like focal length, aperture, film speed, and exposure time. 
       </p>
     
-<!--       <div class="column is-centered"> -->
-<!--           <div class="content has-text-centered"> -->
-<!--             <img src="./static/images/method.png" width="87%"> -->
-<!--           <p> -->
-<!--             Our key idea is to embed camera settings as tokens in the text feature space of Latent Diffusion Models (LDMs) for more effective and precise image control. -->
-<!--           </p> --> 
-<!--         </div> -->
-<!--         </div> -->
+      <div class="column is-centered">
+          <div class="content has-text-centered">
+            <img src="./static/images/method.png" width="87%">
+          <p>
+            Our key idea is to embed camera settings as tokens in the text feature space of Latent Diffusion Models (LDMs) for more effective and precise image control.
+          </p> 
+        </div>
+        </div>
       </div>
 </section>
 
@@ -340,6 +359,19 @@
 
 <script src="static/js/juxtapose.js"></script>
 <link rel="stylesheet" href="static/css/juxtapose.css">
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{fang2024camera,
+      title={Camera Settings as Tokens: Modeling Photography on Latent Diffusion Models},
+      author={I-Sheng Fang and Yue-Hua Han and Jun-Cheng Chen},
+      booktitle={SIGGRAPH Asia},
+      year={2024}
+    }</code></pre>
+  </div>
+</section>
 
 </body>
 </html>
